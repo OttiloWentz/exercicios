@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class ExerciciosM3S2 extends HttpServlet {
+public class M3S2E1 extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -21,7 +21,7 @@ public class ExerciciosM3S2 extends HttpServlet {
         String cidade = req.getParameter("cidade");
 
         writer.println("<h2>Exercício 01</h2>");
-        writer.println("<h4>Olá " +nome+ " você tem " +idade+ " e mora na cidade de " +cidade+ ".</h4>");
+        writer.println("<h4>Olá " +nome+ " você tem " +idade+ " anos e mora na cidade de " +cidade+ ".</h4>");
 
     }
 }
