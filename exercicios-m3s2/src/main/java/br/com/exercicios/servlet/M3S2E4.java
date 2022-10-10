@@ -22,11 +22,11 @@ public class M3S2E4 extends HttpServlet {
 
         String nomeAluno = req.getParameter("nomeAluno");
         String nomeDisciplina = req.getParameter("nomeDisciplina");
-        String nota1 = req.getParameter("nota1");
-        String nota2 = req.getParameter("nota2");
-        String nota3 = req.getParameter("nota3");
-        String nota4 = req.getParameter("nota4");
-        double media = Double.parseDouble(nota1+nota2+nota3+nota4)/4;
+        double nota1 = Double.parseDouble(req.getParameter("nota1"));
+        double nota2 = Double.parseDouble(req.getParameter("nota2"));
+        double nota3 = Double.parseDouble(req.getParameter("nota3"));
+        double nota4 = Double.parseDouble(req.getParameter("nota4"));
+        double media = (nota1+nota2+nota3+nota4)/4;
 
         writer.println("<ul>");
         writer.println("<li>Olá "+nomeAluno+"</li>");
